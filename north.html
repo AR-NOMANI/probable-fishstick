@@ -1,0 +1,50 @@
+<!-- North Beaches Page (north.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Beaches</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Famous Beaches in the North</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="south.html">South Beaches</a></li>
+                <li><a href="east.html">East Beaches</a></li>
+                <li><a href="west.html">West Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="beach">
+            <h2>Waikiki Beach, Hawaii (USA)</h2>
+            <img src="waikiki.jpg" alt="Waikiki Beach">
+            <p>Waikiki Beach is a famous surfing destination with golden sands and stunning views of Diamond Head.</p>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+<a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+
+        </div>
+        <div class="beach">
+            <h2>Miami Beach, Florida (USA)</h2>
+            <img src="miami.jpg" alt="Miami Beach">
+            <p>Known for its vibrant nightlife, white sands, and turquoise waters, Miami Beach is a top tourist destination.</p>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+<a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+
+        </div>
+    </section>
+    <script src="JS/script.js"></script>
+    <script src="JS/getLocation.js"></script>
+    <script src="JS/filterBeaches.js"></script>
+    <script src="JS/showPosition.js"></script>
+    <script src="JS/showError.js"></script>
+    <script src="JS/fetchWeather.js"></script>
+    <script src="JS/downloadFile.js"></script>
+</body>
+
+
+</html>

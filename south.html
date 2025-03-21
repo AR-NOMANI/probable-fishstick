@@ -1,0 +1,50 @@
+
+<!-- South Beaches Page (south.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Beaches</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Famous Beaches in the South</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="north.html">North Beaches</a></li>
+                <li><a href="east.html">East Beaches</a></li>
+                <li><a href="west.html">West Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="beach">
+            <h2>Bondi Beach, Australia</h2>
+            <img src="bondi.jpg" alt="Bondi Beach">
+            <p>One of the most famous beaches in the world, Bondi Beach is known for its golden sand and surf culture.</p>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+<a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+
+        </div>
+        <div class="beach">
+            <h2>Camps Bay Beach, South Africa</h2>
+            <img src="campsbay.jpg" alt="Camps Bay Beach">
+            <p>Located in Cape Town, this beach is famous for its scenic beauty with the Twelve Apostles mountain range in the background.</p>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+<a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+
+        </div>
+    </section>
+    <script src="JS/getLocation.js"></script>
+    <script src="JS/filterBeaches.js"></script>
+    <script src="JS/showPosition.js"></script>
+    <script src="JS/showError.js"></script>
+    <script src="JS/fetchWeather.js"></script>
+    <script src="JS/downloadFile.js"></script>
+
+</body>
+
+</html>

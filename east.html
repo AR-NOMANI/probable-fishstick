@@ -1,0 +1,51 @@
+
+<!-- East Beaches Page (east.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Beaches</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Famous Beaches in the East</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="north.html">North Beaches</a></li>
+                <li><a href="south.html">South Beaches</a></li>
+                <li><a href="west.html">West Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="navigation-buttons">
+            <button onclick="window.location.href='north.html'">Go to North Beaches</button>
+            <button onclick="window.location.href='south.html'">Go to South Beaches</button>
+            <button onclick="window.location.href='west.html'">Go to West Beaches</button>
+        </div>
+
+        <div class="beach">
+            <h2>Railay Beach, Thailand</h2>
+            <img src="assets/images/clifton.jpg" alt="Railay Beach">
+
+            <p>Accessible only by boat, Railay Beach is famous for its towering limestone cliffs and crystal-clear waters.</p>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+<a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+
+
+        </div>
+        <div class="beach">
+            <h2>Pink Beach, Indonesia</h2>
+            <img src="assets/images/french.jpg" alt="Pink Beach">
+
+            <p>This beach gets its unique pink sand from microscopic red organisms mixed with white sand.</p>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+<a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+
+        </div>
+    </section>
+</body>
+</html>
