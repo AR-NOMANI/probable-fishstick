@@ -1,0 +1,48 @@
+<!-- East Beaches Page (east.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Beaches</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Famous Beaches in the East</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="north.html">North Beaches</a></li>
+                <li><a href="south.html">South Beaches</a></li>
+                <li><a href="west.html">West Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="beach">
+            <h2>Waikiki Beach, Hawaii</h2>
+            <img src="assets/images/waikiki.jpg" alt="Waikiki Beach">
+            <p>Famous for its stunning sunsets and vibrant nightlife.</p>
+            <button onclick="getDirections('Waikiki Beach, Hawaii')">Get Directions to Waikiki Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+        <div class="beach">
+            <h2>Bondi Beach, Australia</h2>
+            <img src="assets/images/bondi.jpg" alt="Bondi Beach">
+            <p>Famous for its surf culture and golden sands.</p>
+            <button onclick="getDirections('Bondi Beach, Australia')">Get Directions to Bondi Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+    </section>
+    <script src="JS/script.js"></script>
+    <script src="JS/getLocation.js"></script>
+    <script src="JS/filterBeaches.js"></script>
+    <script src="JS/showPosition.js"></script>
+    <script src="JS/showError.js"></script>
+    <script src="JS/fetchWeather.js"></script>
+    <script src="JS/downloadFile.js"></script>
+</body>
+</html>

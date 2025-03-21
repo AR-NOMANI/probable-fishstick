@@ -1,0 +1,48 @@
+<!-- West Beaches Page (west.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Beaches</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Famous Beaches in the West</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="north.html">North Beaches</a></li>
+                <li><a href="south.html">South Beaches</a></li>
+                <li><a href="east.html">East Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="beach">
+            <h2>Camps Bay Beach, South Africa</h2>
+            <img src="assets/images/campsbay.jpg" alt="Camps Bay Beach">
+            <p>Known for its stunning views and vibrant atmosphere.</p>
+            <button onclick="getDirections('Camps Bay Beach, South Africa')">Get Directions to Camps Bay Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+        <div class="beach">
+            <h2>Santa Monica Beach, California</h2>
+            <img src="assets/images/santamonica.jpg" alt="Santa Monica Beach">
+            <p>Famous for its pier and beautiful sunsets.</p>
+            <button onclick="getDirections('Santa Monica Beach, California')">Get Directions to Santa Monica Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+    </section>
+    <script src="JS/script.js"></script>
+    <script src="JS/getLocation.js"></script>
+    <script src="JS/filterBeaches.js"></script>
+    <script src="JS/showPosition.js"></script>
+    <script src="JS/showError.js"></script>
+    <script src="JS/fetchWeather.js"></script>
+    <script src="JS/downloadFile.js"></script>
+</body>
+</html>
