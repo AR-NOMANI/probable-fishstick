@@ -1,0 +1,50 @@
+<!-- East Beaches Page (east.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Beaches</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Famous Beaches in the East</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="north.html">North Beaches</a></li>
+                <li><a href="south.html">South Beaches</a></li>
+                <li><a href="west.html">West Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="beach">
+            <h2>Waikiki Beach, Hawaii</h2>
+            <img src="/assets/images/image 1.jpg" alt="Waikiki Beach">
+            <p>Famous for its stunning sunsets and vibrant nightlife.</p>
+<button onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Waikiki+Beach,+Hawaii', '_blank')">Get Directions to Waikiki Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+        <div class="beach">
+            <h2>Clearwater Beach, Florida, USA</h2>
+            <img src="/assets/images/cle.jpg" alt="Clearwater Beach">
+            <p>Laid-back Clearwater Beach is known for its namesake stretch of soft, white sand, which draws visitors year-round for jet-skiing, parasailing, and stand-up paddleboarding in its calm waters. Cyclists and rollerbladers glide along a winding beachfront promenade lined with casual seafood restaurants and cafes. Come sunset, Pier 60 hosts a nightly festival with street performers and craft vendors
+                Renowned for its soft white sands and clear waters.</p>
+            <button onclick="getDirections('Clearwater Beach, Florida, USA')">Get Directions to Clearwater
+                Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+    </section>
+    <script src="JS/script.js"></script>
+    <script src="JS/getLocation.js"></script>
+    <script src="JS/filterBeaches.js"></script>
+    <script src="JS/showPosition.js"></script>
+    <script src="JS/showError.js"></script>
+    <script src="JS/fetchWeather.js"></script>
+    <script src="JS/downloadFile.js"></script>
+</body>
+</html>

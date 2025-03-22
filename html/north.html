@@ -1,0 +1,62 @@
+<!-- North Beaches Page (north.html) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Beaches</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Famous Beaches in the North</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="south.html">South Beaches</a></li>
+                <li><a href="east.html">East Beaches</a></li>
+                <li><a href="west.html">West Beaches</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="beach-section">
+        <div class="beach">
+            <h2>Copacabana Beach, Brazil</h2>
+            <img src="/assets/images/image 7.jpg" alt="Copacabana Beach">
+            <p>A lively beach known for its vibrant atmosphere and beautiful scenery.
+                Copacabana, sector of the city of Rio de Janeiro, Brazil, occupying a narrow strip of land between the
+                mountains and the sea. It is famous for its magnificent 2 1/2-mile (4-km) curved beach. Skyscraper
+                hotels, apartment houses, cafés, nightclubs, restaurants, theaters, and bars line the waterfront.
+                Copacabana is almost a self-contained city; its traffic congestion has been progressively eased by the
+                construction of tunnels and a subway system to connect it with other parts of Rio de Janeiro as well as
+                by a major landfill project that reconstructed the beach beyond a substantially widened Avenida
+                Atlantica.
+            </p>
+<button onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Copacabana+Beach,+Brazil', '_blank')">Get Directions to Copacabana Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+       
+        <div class="beach">
+            <h2>Miami Beach, Florida (USA)</h2>
+            <img src="/assets/images/mi.jpg" alt="Miami Beach">
+            <p>Miami Beach is a south Florida island city, connected by bridges to mainland Miami. Wide beaches stretch from North Shore Open Space Park, past palm-lined Lummus Park to South Pointe Park. The southern end, South Beach, is known for its international cachet with models and celebrities, and its early-20th-century architecture in the Art Deco Historic district with pastel-colored buildings, especially on Ocean Drive
+                Known for its vibrant nightlife, white sands, and turquoise waters, Miami Beach is a top tourist
+                destination.</p>
+<button onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=Miami+Beach,+Florida', '_blank')">Get Directions to Miami Beach</button>
+            <a href="#" class="download-btn" onclick="downloadFile('pdf')">Download PDF</a>
+            <a href="#" class="download-btn" onclick="downloadFile('doc')">Download DOC</a>
+        </div>
+    </section>
+    <script src="JS/script.js"></script>
+    <script src="JS/getLocation.js"></script>
+    <script src="JS/filterBeaches.js"></script>
+    <script src="JS/showPosition.js"></script>
+    <script src="JS/showError.js"></script>
+    <script src="JS/fetchWeather.js"></script>
+    <script src="JS/downloadFile.js"></script>
+</body>
+
+</html>

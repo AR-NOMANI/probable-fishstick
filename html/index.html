@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Of Beaches</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Our Beach Website</h1>
+
+        <h1>Beauty Of Beaches</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <select id="beachDropdown" onchange="location = this.value;">
+                        <option value="">Select a Beach</option>
+                        <option value="north.html">North Beaches</option>
+                        <option value="south.html">South Beaches</option>
+                        <option value="east.html">East Beaches</option>
+                        <option value="west.html">West Beaches</option>
+                    </select>
+                </li>
+
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Explore the Most Beautiful Beaches in the World</h2>
+        <input type="text" id="beachSearch" placeholder="Search for beaches..." oninput="filterBeaches()">
+        <div id="suggestions" class="suggestions-dropdown"></div>
+
+        <p>we believe that travel is more than just visiting new places—it's about experiencing cultures, creating
+            memories, and discovering the beauty of the world. Whether you're looking for a relaxing beach getaway, an
+            adventurous mountain trek, or a cultural city tour, we have the perfect itinerary for you!
+            🌍 International & Domestic Tours – Explore exotic destinations worldwide.
+            🏝️ Beach Vacations – Relax on pristine shores with luxurious stays.
+            🏔️ Adventure Trips – Trekking, safari, scuba diving, and more!
+            🚗 Customized Road Trips – Explore at your own pace with well-planned self-drive tours.
+            ✈️ Flight & Hotel Bookings – Seamless travel arrangements at unbeatable prices.</p>
+        <button id="findBeaches" onclick="getLocation()">Find Nearby Beaches</button>
+        <p id="location-output"></p>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BeautyOfBeaches. All Rights Reserved.</p>
+    </footer>
+    <script src="/JS/contactForm.js"></script>
+<script src="/JS/downloadFile.js"></script>
+<script src="/JS/filterBeaches.js"></script>
+<script src="/JS/getLocation.js"></script>
+<script src="/JS/script.js"></script>
+<script src="/JS/showError.js"></script>
+<script src="/JS/showPosition.js"></script>
+</body>
+
+</html>

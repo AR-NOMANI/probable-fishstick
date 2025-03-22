@@ -1,0 +1,121 @@
+/* Styles for the search bar */
+#beachSearch {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+#beachSearch:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styles for the beach section */
+.beach {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beach:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for beach images */
+.beach img {
+    max-width: 100%;
+    max-height: 400px; /* Set a maximum height */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Styles for the beach dropdown */
+#beachDropdown {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Styles for the suggestions dropdown */
+.suggestions-dropdown {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+}
+
+/* Styles for each suggestion item */
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Styles for navigation buttons */
+.navigation-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation-buttons button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigation-buttons button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.navigation-buttons button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    #beachSearch {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+    }
+
+    .navigation-buttons button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
